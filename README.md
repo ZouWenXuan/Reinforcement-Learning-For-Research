@@ -43,7 +43,7 @@ model.fit(X_train, y_train, epochs=5, callbacks=[tf_callback])
 
 This is the simplest tensorflow code. The last two callback lines create a link to tensorboard, which will create a content that tensorboard can read in the current directory./logs.
 
-<img src="../note/log1-RL_framework/figure/tfb1.PNG" alt="tfb1" style="zoom:75%;" />
+<img src="./figure/tfb1.PNG" alt="tfb1" style="zoom:75%;" />
 
 Note that here are two repeated training exactly the same, the second training of step1 will be connected from the first training of step200, so it will cause inconvenience. You can adopt[(21条消息) tensorboard多个events文件显示紊乱的解决办法_shahuzi的博客-CSDN博客_tensorboard多个文件](https://blog.csdn.net/shahuzi/article/details/81223980)，to distinguish logs by introducing time as a marker:
 
@@ -71,7 +71,7 @@ for i in range(200):
 
 The above considerations generate a sin function, visualized with tensorboard, and the result is shown below:
 
-<img src="../note/log1-RL_framework/figure/image-20220518133537112.png" alt="image-20220518133537112" style="zoom:50%;" />
+<img src="./figure/image-20220518133537112.png" alt="image-20220518133537112" style="zoom:50%;" />
 
 
 
